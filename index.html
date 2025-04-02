@@ -1,79 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitry Rizhikov - Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
-    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-9">
-        <header class="mb-16 px-5 grid grid-cols-4 gap-12 border">
-            <img src="./cv.jpg" class="w-40 rounded-full aspect-square"/>
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-9 grid grid-cols-1 gap-7">
+        <header class="px-5 grid grid-cols-4 gap-12">
+            <img src="./cv.jpg" class="w-40 rounded-full aspect-square" />
             <div class="text-sm text-gray-500 col-span-3">
                 <h1 class="text-4xl font-bold">Dmitry Rizhikov</h1>
-                <p class="text-xl font-bold text-gray-600">Fullstack Developer</p>
+                <p class="text-xl font-bold text-gray-600">Senior Fullstack Developer</p>
                 <p>+4917631662063</p>
-                <p>dmitry.rizhikov@gmail.com</p>
-                <p><a href="https://www.linkedin.com/in/dmitryrizhikov" class="text-blue-500">https://www.linkedin.com/in/dmitryrizhikov</a></p>
+                <p><a href="mailto:dmitry.rizhikov@gmail.com">dmitry.rizhikov@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/dmitryrizhikov"
+                        class="text-blue-500">https://www.linkedin.com/in/dmitryrizhikov</a></p>
             </div>
         </header>
-
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold border-b pb-2">Work Experience</h2>
-            <div class="mt-4 grid">
-                <h3 class="text-lg font-semibold">Senior Fullstack Developer - Itemis AG</h3>
-                <p class="text-sm text-gray-500">11.2020 – Present</p>
-                <ul class="list-disc list-inside text-gray-700 mt-2">
-                    <li>Migrate legacy PHP script into maintainable NodeJS application (Typescript, MySql, DynamoDB)</li>
-                    <li>Develop live video streaming solution using Nuxt, Vue, AWS</li>
-                    <li>Created travel planning web applications and monitoring tools</li>
-                </ul>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-lg font-semibold">Senior Fullstack Developer - DreamIT GmbH</h3>
-                <p class="text-sm text-gray-500">01.2020 – 06.2020</p>
-                <ul class="list-disc list-inside text-gray-700 mt-2">
-                    <li>Designed and developed an online lottery platform using Kotlin, GraphQL, Springboot</li>
-                </ul>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-lg font-semibold">Senior Backend Developer - Tipico Technology Services GmbH</h3>
-                <p class="text-sm text-gray-500">10.2015 – 12.2019</p>
-                <ul class="list-disc list-inside text-gray-700 mt-2">
-                    <li>Integrated new payment providers into sports betting applications</li>
-                    <li>Migrated payment functionality to microservice architecture using Java, Springboot, Hibernate</li>
-                </ul>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-lg font-semibold">Fullstack Developer - Seeburger AG</h3>
-                <p class="text-sm text-gray-500">07.2012 – 09.2015</p>
-                <ul class="list-disc list-inside text-gray-700 mt-2">
-                    <li>Developed and maintained procurement and supply chain management applications</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold border-b pb-2">Education</h2>
-            <div class="mt-4">
-                <h3 class="text-lg font-semibold">Bachelor of Technology in Software Engineering</h3>
-                <p class="text-sm text-gray-500">Ort Braude College, Israel | 1999 – 2003</p>
-                <p class="text-gray-700">Major: Cryptology, Object Oriented Programming</p>
-            </div>
-        </section>
-
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold border-b pb-2">Skills & Languages</h2>
+        <section>
+            <h2 class="text-xl font-semibold border-b pb-2">Skills</h2>
             <ul class="list-disc list-inside text-gray-700 mt-2">
                 <li>Software Design and Development</li>
                 <li>Requirements Engineering</li>
                 <li>Evaluation and employment of new methods, tools, processes</li>
                 <li>MVP-oriented resource allocation</li>
                 <li>Agile Mindset</li>
-                <li>German - B2, English - C2, Hebrew - Native, Russian - Native, Ukrainian - B2</li>
+
+            </ul>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold border-b pb-2">Work Experience</h2>
+            <div class="grid grid-cols-1 gap-2">
+                <div class="mt-4 grid grid-cols-5 items-center">
+                    <h3 class="font-semibold col-span-2">Senior Fullstack Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-2">Itemis AG</p>
+                    <p class="text-sm text-gray-500 text-right">11.2020 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 col-span-5 text-xs">
+                        <li>Migrate PHP script into well tested maintainable NodeJS backend application (Typescript, MySql, DynamoDB)
+                        </li>
+                        <li>Provide solution for creating and managing live video streams (Vue, Vuetify, DynamoDB, Serverless, Amazon IVS, AWS)</li>
+                        <li>Develop train travel planning web application (Vue, Nuxt, Typescript, NodeJS)</li>
+                        <li>Create factory production pipeline monitoring api (Kotlin, Springboot, Hateos, Oracle)</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-5 items-center">
+                    <h3 class="font-semibold col-span-2">Senior Fullstack Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-2">DreamIT GmbH</p>    
+                    <p class="text-sm text-gray-500 text-right">01.2020 – 06.2020</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-4 text-xs">
+                        <li>Design and development of online lottery platform using Kotlin, GraphQL, Springboot,
+                            Hibernate,
+                            MongoDB, Docker, Kubernetes, AWS</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-8 items-center">
+                    <h3 class="font-semibold col-span-3">Senior Backend Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-3">Tipico Technology Services GmbH</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">10.2015 – 12.2019</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-8 text-xs">
+                        <li>Integration of new payment providers into sports betting application as well as migration of
+                            payment
+                            functionality to microservice architecture using Java, Springboot, Hibernate, EJB, GWT, JSP,
+                            Servlets, MariaDB, Kubernetes</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-7 items-center">
+                    <h3 class="font-semibold col-span-2">Fullstack Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-3">Seeburger AG</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">07.2012 – 09.2015</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-7 text-xs">
+                        <li>Development and maintenance of procurement and supply chain management application using
+                            Java, EJB, JSP, Servlets, Oracle, ExtJS </li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-7 items-center">
+                    <h3 class="font-semibold col-span-2">Fullstack Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-3">Ontoprise GmbH</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">05.2011 – 05.2012</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-7 text-xs">
+                        <li>Development and maintenance of Mediawiki Extentions leveraging the semantic markup queries
+                            using PHP, JQuery, Prototype.js</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-7 items-center">
+                    <h3 class="font-semibold col-span-2">Software Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-3">EaseCap Solutions GmbH</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">02.2009 – 02.2011</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-7 text-xs">
+                        <li>Development and maintenance of loan portfolio management application using Java, ICEFaces,
+                            EJB, Hibernate, Oracle</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-9 items-center">
+                    <h3 class="font-semibold col-span-3">Test automation engineer</h3>
+                    <p class="text-sm text-gray-500 col-span-4">Surf Communication Solutions, Israel</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">04.2008 – 10.2008</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-8 text-xs">
+                        <li>Development of automated test environment for Surf&trade; media processing boards using
+                            Aqua testing tool, Java (short term position due to my relocation to Germany)</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-6 items-center">
+                    <h3 class="font-semibold col-span-2">Fullstack Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-2">LogNet Systems, Israel</p>
+                    <p class="text-sm text-gray-500 text-right col-span-2">03.2007 – 04.2008</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-6 text-xs">
+                        <li>Development of Self Service Billing solutions using Java, Struts, EJB, JSP, JavaScript
+                            (short term position due to Lognet moving their development department overseas)</li>
+                    </ul>
+                </div>
+                <div class="mt-4 grid grid-cols-4 items-center">
+                    <h3 class="font-semibold">Junior Developer</h3>
+                    <p class="text-sm text-gray-500 col-span-2">Tadiad Computers & Information, Israel</p>
+                    <p class="text-sm text-gray-500 text-right">2004 – 2007</p>
+                    <ul class="list-inside text-gray-700 mt-2 col-span-4 text-xs">
+                        <li>Development of storage management solutions using Java, Servlets, Websphere, DB2</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold border-b pb-2">Education</h2>
+            <div class="mt-4 grid grid-cols-4">
+                <h3 class="font-semibold col-span-3">Bachelor of Technology in Software Engineering</h3>
+                <p class="text-sm text-gray-500 text-right">1999 – 2003</p>
+                <p class="text-sm text-gray-500 col-span-4">Ort Braude College, Israel</p>
+                <p class="text-gray-700 col-span-4 mt-2 text-xs">Major: Cryptology, Object Oriented Programming</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold border-b pb-2">Languages</h2>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>German - B2</li>
+                <li>English - C2</li>
+                <li>Hebrew - Native</li>
+                <li>Russian - Native</li>
+                <li>Ukrainian - B2</li>
             </ul>
         </section>
     </div>
 </body>
+
 </html>
