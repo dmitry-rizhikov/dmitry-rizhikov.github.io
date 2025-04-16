@@ -497,19 +497,53 @@ var m = reactDomExports;
   client.hydrateRoot = m.hydrateRoot;
 }
 
+const SectionTitle = ({ children }) => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-gray-700 border-b", children });
+};
+
+const Education = () => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(SectionTitle, { children: "Education" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row md:justify-between mb-2 text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-700", children: "Bachelor of Technology in Software Engineering" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Ort Braude College, Israel" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-500 mt-1 md:mt-0", children: "1999 – 2003" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700 mt-1", children: "Major: Cryptology, Object Oriented Programming" })
+    ] })
+  ] });
+};
+
 const Header = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "md:pl-10 print:pl-10 grid md:grid-cols-5 print:grid-cols-5 grid-cols-1 items-center gap-10", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/cv.jpg", className: "rounded-full aspect-square ring-4 ring-white md:col-span-2 print:col-span-2 w-80" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "img",
+      {
+        src: "/cv.jpg",
+        className: "rounded-full aspect-square ring-4 ring-white md:col-span-2 print:col-span-2 w-80",
+        alt: "cv"
+      }
+    ),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm md:border-l md:pl-9 md:col-span-3 print:border-l print:pl-9 print:col-span-3", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-4xl print:text-3xl font-bold text-gray-600", children: "Dmitry Rizhikov" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-bold", children: "Senior Fullstack Developer" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "hidden print:block", children: "+4917631662063" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "mailto:dmitry.rizhikov@gmail.com", className: "text-blue-500", children: "dmitry.rizhikov@gmail.com" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "a",
+        {
+          href: "mailto:dmitry.rizhikov@gmail.com",
+          className: "text-blue-500 hover:font-bold",
+          children: "dmitry.rizhikov@gmail.com"
+        }
+      ) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
           href: "https://www.linkedin.com/in/dmitryrizhikov",
-          className: "text-blue-500",
+          className: "text-blue-500 hover:font-bold",
           children: "https://www.linkedin.com/in/dmitryrizhikov"
         }
       ) }),
@@ -517,7 +551,7 @@ const Header = () => {
         "a",
         {
           href: "https://dmitry-rizhikov.github.io/",
-          className: "text-blue-500",
+          className: "text-blue-500 hover:font-bold",
           children: "https://dmitry-rizhikov.github.io"
         }
       ) })
@@ -525,8 +559,22 @@ const Header = () => {
   ] });
 };
 
-const SectionTitle = ({ children }) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold text-gray-700 border-b", children });
+const Languages = () => {
+  const languages = [
+    { name: "German", level: "B2" },
+    { name: "English", level: "C2" },
+    { name: "Hebrew", level: "Native" },
+    { name: "Russian", level: "Native" },
+    { name: "Ukrainian", level: "B2" }
+  ];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(SectionTitle, { children: "Languages" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "list-disc pl-5 mt-4 space-y-1 text-gray-700", children: languages.map((language, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { children: [
+      language.name,
+      " - ",
+      language.level
+    ] }, index)) })
+  ] });
 };
 
 const Skills = () => {
@@ -545,18 +593,25 @@ const Skills = () => {
   ] });
 };
 
+const JobIntro = ({ intro }) => {
+  return intro ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-gray-700", children: intro }) : "";
+};
 const JobEntry = ({
   title,
   company,
   period,
-  responsibilities
+  responsibilities,
+  intro
 }) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pb-0 text-sm", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-flow-col-dense md:gap-2 print:grid-flow-col-dense print:gap-2 items-baseline", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg font-semibold text-gray-700", children: title }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: company }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-500 md:text-right print:text-right", children: period })
-    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-0", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-flow-col-dense md:gap-2 print:grid-flow-col-dense print:gap-2 items-baseline", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg font-semibold text-gray-700", children: title }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: company }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-500 md:text-right print:text-right", children: period })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(JobIntro, { intro })
+    ] }),
     responsibilities.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "list-disc pl-5 mt-3 space-y-1 text-gray-700", children: responsibilities.map((responsibility, index) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: responsibility }, index)) })
   ] });
 };
@@ -571,12 +626,14 @@ const WorkExperience = () => {
           title: "Senior Fullstack Developer",
           company: "Itemis AG",
           period: "11.2020 – Present",
+          intro: "At Itemis as part of self-organized agile team we aim to provide customer with usable maintainable software product which suits customer requirements.\n          We take care of the cloud infrastructure including CI/CD pipelines and monitoring. The most recent projects I took part in development of are:",
           responsibilities: [
-            "Migrate Nuxt2/Vue2 application to Nuxt3/Vue3 including custom component library (Node, Typescript, Vue, Nuxt, Tailwind)",
-            "Migrate PHP script into well tested maintainable NodeJS backend application (Node, Typescript, MySQL, DynamoDB)",
+            "Migrate Nuxt2/Vue2 application to Nuxt3/Vue3 including custom component library (Node, Typescript, Vue, Nuxt, Tailwind, AWS)",
+            "Migrate legacy PHP script into well tested maintainable NodeJS backend application (Node, Typescript, MySQL, DynamoDB, AWS)",
             "Provide solution for creating and managing live video streams (Node, Vue, Vuetify, DynamoDB, Serverless, Amazon IVS, AWS)",
-            "Develop train travel planning web application (Node, Vue, Nuxt, Typescript, NodeJS)",
-            "Create factory production pipeline monitoring api (Kotlin, Springboot, Hazelcast, Oracle)"
+            "Develop train travel planning web application (Node, Vue, Nuxt, Typescript, NodeJS, AWS)",
+            "Create factory production pipeline monitoring api (Kotlin, Springboot, Hazelcast, Oracle)",
+            "Create automotive component test bench management app (React, Node, Typescript)"
           ]
         }
       ),
@@ -642,7 +699,7 @@ const WorkExperience = () => {
           company: "Surf Communication Solutions, Israel",
           period: "04.2008 – 10.2008",
           responsibilities: [
-            "Development of automated test environment for Surf™ media processing boards using Aqua testing tool. Java (short term position due to my relocation to Germany)"
+            "Development of automated test environment for Surf™ media processing boards using Aqua testing tool using Java (short term position due to my relocation to Germany)"
           ]
         }
       ),
@@ -669,40 +726,6 @@ const WorkExperience = () => {
         }
       )
     ] })
-  ] });
-};
-
-const Education = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(SectionTitle, { children: "Education" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row md:justify-between mb-2 text-sm", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-gray-700", children: "Bachelor of Technology in Software Engineering" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-600", children: "Ort Braude College, Israel" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-500 mt-1 md:mt-0", children: "1999 – 2003" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-700 mt-1", children: "Major: Cryptology, Object Oriented Programming" })
-    ] })
-  ] });
-};
-
-const Languages = () => {
-  const languages = [
-    { name: "German", level: "B2" },
-    { name: "English", level: "C2" },
-    { name: "Hebrew", level: "Native" },
-    { name: "Russian", level: "Native" },
-    { name: "Ukrainian", level: "B2" }
-  ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(SectionTitle, { children: "Languages" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "list-disc pl-5 mt-4 space-y-1 text-gray-700", children: languages.map((language, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { children: [
-      language.name,
-      " - ",
-      language.level
-    ] }, index)) })
   ] });
 };
 
